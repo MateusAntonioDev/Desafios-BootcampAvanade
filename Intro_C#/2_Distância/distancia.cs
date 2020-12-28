@@ -11,15 +11,17 @@ using System;
 
             Console.WriteLine($"Digite a distância em quilômetros entre a {fastMotorcycle} e a {slowMotorcycle} : ");
             float distance = float.Parse(Console.ReadLine());
-            while (distance < 0) 
+            if (distance > 0)
             {
-                Console.WriteLine("Digite um valor positivo: ");
-                distance = float.Parse(Console.ReadLine());
-            }
-            float time = distance * 2 ;
-            Barrier();
+                float time = distance * 2 ;
+                Barrier();
 
-            Console.WriteLine($"O tempo para a {fastMotorcycle} ficar a {distance}KM da {slowMotorcycle} é {time} minutos");
+                Console.WriteLine($"O tempo para a {fastMotorcycle} ficar a {distance}KM da {slowMotorcycle} é {time} minutos");
+            } else {
+                Console.WriteLine("O valor digitado deve ser maior que 0");
+            }
+
+            
 
         }
         static void Barrier()
