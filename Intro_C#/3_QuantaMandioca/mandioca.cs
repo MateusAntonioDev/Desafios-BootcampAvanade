@@ -1,10 +1,8 @@
 using System;
 
-namespace Desafio3
-{
-    class Program
+    class Desafio
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.Write("Quantas mandiocas Chico vai comer? ");
             int chico = 300 * Int32.Parse(Console.ReadLine());
@@ -24,4 +22,4 @@ namespace Desafio3
             Console.WriteLine($"Marlene deve preparar {total} gramas de mandioca");
         }
     }
-}
+

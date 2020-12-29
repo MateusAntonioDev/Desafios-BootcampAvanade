@@ -1,8 +1,8 @@
 using System;
 
-    class Program
+    class Desafio
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.Write("Quantas divisões você deseja que sejam realizadas? ");
             int limit = int.Parse(Console.ReadLine());
@@ -25,7 +25,7 @@ using System;
                     }
                 }
             } else {
-                Console.WriteLine("O valor digitado deve ser positivo.");
+                Console.WriteLine("O valor digitado deve ser maior do que 0.");
             }
             
 

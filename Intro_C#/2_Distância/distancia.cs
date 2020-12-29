@@ -1,7 +1,7 @@
 using System;
-    class Program
+    class Desafio
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Digite o nome da moto mais veloz: ");
             string fastMotorcycle = Console.ReadLine();
